@@ -944,6 +944,44 @@ footer {
 .toast.show { transform: translateY(0); opacity: 1; }
 
 /* ═══════════════════════════
+   LANGUAGE TOGGLE
+═══════════════════════════ */
+.lang-toggle {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.lang-btn {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    padding: 0.4rem 0.65rem;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    line-height: 1;
+}
+.lang-btn + .lang-btn { border-left: 1px solid var(--border-light); }
+.lang-btn.active {
+    background: var(--gold);
+    color: var(--bg);
+}
+.lang-btn:not(.active):hover {
+    color: var(--text-secondary);
+    background: var(--bg-card);
+}
+.lang-toggle--mobile {
+    margin-top: 1rem;
+    border-color: var(--border);
+}
+.lang-toggle--mobile .lang-btn { padding: 0.6rem 1.2rem; font-size: 0.8rem; }
+
+/* ═══════════════════════════
    RESPONSIVE
 ═══════════════════════════ */
 @media (max-width: 960px) {

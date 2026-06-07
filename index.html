@@ -15,11 +15,15 @@
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
     <button class="mobile-close" id="mobileClose">[ CLOSE ]</button>
-    <a href="#about" onclick="closeMobile()">About</a>
-    <a href="#skills" onclick="closeMobile()">Skills</a>
-    <a href="#experience" onclick="closeMobile()">Experience</a>
-    <a href="#booking" onclick="closeMobile()">Book a Call</a>
-    <a href="#contact" onclick="closeMobile()">Contact</a>
+    <a href="#about" onclick="closeMobile()" data-i18n="mobile.about">About</a>
+    <a href="#skills" onclick="closeMobile()" data-i18n="mobile.skills">Skills</a>
+    <a href="#experience" onclick="closeMobile()" data-i18n="mobile.experience">Experience</a>
+    <a href="#booking" onclick="closeMobile()" data-i18n="mobile.booking">Book a Call</a>
+    <a href="#contact" onclick="closeMobile()" data-i18n="mobile.contact">Contact</a>
+    <div class="lang-toggle lang-toggle--mobile" aria-label="Language">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+    </div>
 </div>
 
 <!-- NAVIGATION -->
@@ -28,12 +32,16 @@
         <div class="nav-inner">
             <a href="#hero" class="nav-logo">YY<span>.</span></a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#booking">Book a Call</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#booking" data-i18n="nav.booking">Book a Call</a></li>
             </ul>
-            <a href="#contact" class="nav-cta">Get in Touch →</a>
+            <div class="lang-toggle" aria-label="Language">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="de">DE</button>
+            </div>
+            <a href="#contact" class="nav-cta" data-i18n="nav.cta">Get in Touch →</a>
             <div class="hamburger" id="hamburger">
                 <span></span><span></span><span></span>
             </div>
@@ -48,7 +56,7 @@
             <div>
                 <p class="hero-eyebrow">
                     <span class="hero-dot"></span>
-                    Available for freelance &amp; contract work
+                    <span data-i18n="hero.eyebrow">Available for freelance &amp; contract work</span>
                 </p>
                 <h1 class="hero-name">
                     YAKUP<br>
@@ -57,17 +65,17 @@
                 <p class="hero-subtitle">
                     <span class="typed" id="typed"></span><span class="cursor"></span>
                 </p>
-                <p class="hero-desc">
-                    Fullstack Developer & Software Engineer with 8+ years building enterprise-grade systems. Specialized in .NET backends, Oracle databases, and Angular frontends — based in Frankfurt am Main.
+                <p class="hero-desc" data-i18n="hero.desc">
+                    Fullstack Developer &amp; Software Engineer with 8+ years building enterprise-grade systems. Specialized in .NET backends, Oracle databases, and Angular frontends — based in Frankfurt am Main.
                 </p>
                 <div class="hero-btns">
-                    <a href="#booking" class="btn-gold">Book a Discovery Call →</a>
-                    <a href="#experience" class="btn-ghost">View My Work</a>
+                    <a href="#booking" class="btn-gold" data-i18n="hero.btn.booking">Book a Discovery Call →</a>
+                    <a href="#experience" class="btn-ghost" data-i18n="hero.btn.work">View My Work</a>
                 </div>
                 <div class="hero-stats">
-                    <div class="stat"><span class="stat-n">8+</span><span class="stat-l">Years Exp.</span></div>
-                    <div class="stat"><span class="stat-n">10+</span><span class="stat-l">Projects</span></div>
-                    <div class="stat"><span class="stat-n">3</span><span class="stat-l">Languages</span></div>
+                    <div class="stat"><span class="stat-n">8+</span><span class="stat-l" data-i18n="hero.stat.years">Years Exp.</span></div>
+                    <div class="stat"><span class="stat-n">10+</span><span class="stat-l" data-i18n="hero.stat.projects">Projects</span></div>
+                    <div class="stat"><span class="stat-n">3</span><span class="stat-l" data-i18n="hero.stat.langs">Languages</span></div>
                 </div>
             </div>
 
@@ -101,7 +109,7 @@
             </div>
         </div>
     </div>
-    <div class="scroll-hint">scroll</div>
+    <div class="scroll-hint" data-i18n="hero.scroll">scroll</div>
 </section>
 
 <!-- ABOUT -->
@@ -109,12 +117,12 @@
     <div class="container">
         <div class="about-grid">
             <div class="fade-up">
-                <p class="section-label">Who I Am</p>
-                <h2 class="section-title">Building systems<br>that <span>last.</span></h2>
+                <p class="section-label" data-i18n="about.label">Who I Am</p>
+                <h2 class="section-title" data-i18n-html="about.title.html">Building systems<br>that <span>last.</span></h2>
                 <div class="about-text">
-                    <p>I'm <strong>Yakup Yarbas</strong>, a Frankfurt-based fullstack developer and certified IT Specialist for Application Development. Since 2018 I've been crafting enterprise-grade solutions that handle real-world complexity at scale.</p>
-                    <p>My expertise spans the full stack — from <strong>C#/.NET backends</strong> and <strong>Oracle PL/SQL databases</strong> to <strong>Angular frontends</strong> and <strong>Windows services</strong>. I've architected microservices, migrated legacy systems, designed REST APIs, and automated DevOps workflows.</p>
-                    <p>I work in <strong>German</strong>, <strong>English</strong>, and <strong>Turkish</strong> — making collaboration across international teams seamless.</p>
+                    <p data-i18n-html="about.p1.html">I'm <strong>Yakup Yarbas</strong>, a Frankfurt-based fullstack developer and certified IT Specialist for Application Development. Since 2018 I've been crafting enterprise-grade solutions that handle real-world complexity at scale.</p>
+                    <p data-i18n-html="about.p2.html">My expertise spans the full stack — from <strong>C#/.NET backends</strong> and <strong>Oracle PL/SQL databases</strong> to <strong>Angular frontends</strong> and <strong>Windows services</strong>. I've architected microservices, migrated legacy systems, designed REST APIs, and automated DevOps workflows.</p>
+                    <p data-i18n-html="about.p3.html">I work in <strong>German</strong>, <strong>English</strong>, and <strong>Turkish</strong> — making collaboration across international teams seamless.</p>
                 </div>
                 <div class="tag-cloud">
                     <span class="tag">C#</span><span class="tag">.NET Framework</span><span class="tag">.NET Core</span>
@@ -128,38 +136,38 @@
 
             <div class="fade-up">
                 <div class="info-card">
-                    <div class="info-card-head"><span class="info-card-label">Languages</span></div>
+                    <div class="info-card-head"><span class="info-card-label" data-i18n="card.languages">Languages</span></div>
                     <div class="info-row">
-                        <span class="info-row-label">German</span>
-                        <span class="info-row-val">Native</span>
+                        <span class="info-row-label" data-i18n="lang.german">German</span>
+                        <span class="info-row-val" data-i18n="lang.german.level">Native</span>
                     </div>
                     <div class="info-row">
-                        <span class="info-row-label">English</span>
-                        <span class="info-row-val">Proficient</span>
+                        <span class="info-row-label" data-i18n="lang.english">English</span>
+                        <span class="info-row-val" data-i18n="lang.english.level">Proficient</span>
                     </div>
                     <div class="info-row">
-                        <span class="info-row-label">Turkish</span>
-                        <span class="info-row-val">Proficient</span>
+                        <span class="info-row-label" data-i18n="lang.turkish">Turkish</span>
+                        <span class="info-row-val" data-i18n="lang.turkish.level">Proficient</span>
                     </div>
                 </div>
 
                 <div class="info-card">
-                    <div class="info-card-head"><span class="info-card-label">Education</span></div>
+                    <div class="info-card-head"><span class="info-card-label" data-i18n="card.education">Education</span></div>
                     <div class="info-row" style="flex-direction:column; align-items:flex-start; gap:0.2rem;">
-                        <span class="info-row-label">IT Specialist — Application Development</span>
-                        <span class="info-row-val">Universal-IT Services GmbH · 2018–2021</span>
+                        <span class="info-row-label" data-i18n="edu.role1">IT Specialist — Application Development</span>
+                        <span class="info-row-val" data-i18n="edu.place1">Universal-IT Services GmbH · 2018–2021</span>
                     </div>
                     <div class="info-row" style="flex-direction:column; align-items:flex-start; gap:0.2rem;">
-                        <span class="info-row-label">Fachhochschulreife</span>
-                        <span class="info-row-val">Max-Beckmann Upper Secondary · 2015–2018</span>
+                        <span class="info-row-label" data-i18n="edu.role2">Fachhochschulreife</span>
+                        <span class="info-row-val" data-i18n="edu.place2">Max-Beckmann Upper Secondary · 2015–2018</span>
                     </div>
                 </div>
 
                 <div class="info-card">
-                    <div class="info-card-head"><span class="info-card-label">Availability</span></div>
+                    <div class="info-card-head"><span class="info-card-label" data-i18n="card.availability">Availability</span></div>
                     <div class="info-row">
-                        <span class="info-row-label" style="color:var(--teal)">Open to new projects</span>
-                        <span class="info-row-val">Frankfurt / Remote</span>
+                        <span class="info-row-label" style="color:var(--teal)" data-i18n="avail.status">Open to new projects</span>
+                        <span class="info-row-val" data-i18n="avail.location">Frankfurt / Remote</span>
                     </div>
                 </div>
             </div>
@@ -172,8 +180,8 @@
     <div class="container">
         <div class="skills-top">
             <div class="fade-up">
-                <p class="section-label">Technical Expertise</p>
-                <h2 class="section-title">Skills &<br><span>Proficiency</span></h2>
+                <p class="section-label" data-i18n="skills.label">Technical Expertise</p>
+                <h2 class="section-title" data-i18n-html="skills.title.html">Skills &<br><span>Proficiency</span></h2>
             </div>
         </div>
 
@@ -213,7 +221,7 @@
         </div>
 
         <div class="tools-strip fade-up">
-            <p class="tools-label">Tools & Platforms</p>
+            <p class="tools-label" data-i18n="tools.label">Tools & Platforms</p>
             <div class="tools-row">
                 <span class="tool">Visual Studio</span>
                 <span class="tool">Azure DevOps</span>
@@ -238,15 +246,15 @@
 <section id="experience">
     <div class="container">
         <div class="exp-head fade-up">
-            <p class="section-label">Career</p>
-            <h2 class="section-title">Experience &<br><span>Projects</span></h2>
+            <p class="section-label" data-i18n="exp.label">Career</p>
+            <h2 class="section-title" data-i18n-html="exp.title.html">Experience &<br><span>Projects</span></h2>
         </div>
 
         <div class="tl">
             <div class="tl-item fade-up">
-                <p class="tl-period">2021 — Present</p>
-                <h3 class="tl-role">Software Developer</h3>
-                <p class="tl-company">Universal-IT Services GmbH — Frankfurt am Main</p>
+                <p class="tl-period" data-i18n="tl.period1">2021 — Present</p>
+                <h3 class="tl-role" data-i18n="tl.role1">Software Developer</h3>
+                <p class="tl-company" data-i18n="tl.company1">Universal-IT Services GmbH — Frankfurt am Main</p>
                 <div class="tl-tech">
                     <span>C# .NET</span><span>Angular</span><span>Oracle PL/SQL</span>
                     <span>MSSQL</span><span>REST API</span><span>Microservices</span>
@@ -258,52 +266,52 @@
                     <div class="proj-card">
                         <div class="proj-card-top"><div class="pdot"></div><div class="pdot"></div><div class="pdot"></div></div>
                         <div class="proj-card-body">
-                            <div class="proj-title">Project Reporting Website</div>
-                            <div class="proj-desc">Angular 7 + Entity Framework backend. CRM Dynamics integration, Active Directory auth, recipient management.</div>
+                            <div class="proj-title" data-i18n="proj1.title">Project Reporting Website</div>
+                            <div class="proj-desc" data-i18n="proj1.desc">Angular 7 + Entity Framework backend. CRM Dynamics integration, Active Directory auth, recipient management.</div>
                         </div>
                     </div>
                     <div class="proj-card">
                         <div class="proj-card-top"><div class="pdot"></div><div class="pdot"></div><div class="pdot"></div></div>
                         <div class="proj-card-body">
-                            <div class="proj-title">Windows FTP Service</div>
-                            <div class="proj-desc">Oracle DB backend, FTP route config tabs, service optimization for definition reuse.</div>
+                            <div class="proj-title" data-i18n="proj2.title">Windows FTP Service</div>
+                            <div class="proj-desc" data-i18n="proj2.desc">Oracle DB backend, FTP route config tabs, service optimization for definition reuse.</div>
                         </div>
                     </div>
                     <div class="proj-card">
                         <div class="proj-card-top"><div class="pdot"></div><div class="pdot"></div><div class="pdot"></div></div>
                         <div class="proj-card-body">
-                            <div class="proj-title">RESTful API Development</div>
-                            <div class="proj-desc">.NET Core + Entity Framework. Automated data retrieval from Oracle file management system.</div>
+                            <div class="proj-title" data-i18n="proj3.title">RESTful API Development</div>
+                            <div class="proj-desc" data-i18n="proj3.desc">.NET Core + Entity Framework. Automated data retrieval from Oracle file management system.</div>
                         </div>
                     </div>
                     <div class="proj-card">
                         <div class="proj-card-top"><div class="pdot"></div><div class="pdot"></div><div class="pdot"></div></div>
                         <div class="proj-card-body">
-                            <div class="proj-title">FTP Monitoring Interface</div>
-                            <div class="proj-desc">Angular 10, Syncfusion visualizations, advanced grid filtering, Oracle backend APIs.</div>
+                            <div class="proj-title" data-i18n="proj4.title">FTP Monitoring Interface</div>
+                            <div class="proj-desc" data-i18n="proj4.desc">Angular 10, Syncfusion visualizations, advanced grid filtering, Oracle backend APIs.</div>
                         </div>
                     </div>
                     <div class="proj-card">
                         <div class="proj-card-top"><div class="pdot"></div><div class="pdot"></div><div class="pdot"></div></div>
                         <div class="proj-card-body">
-                            <div class="proj-title">Microservices — Fond Data</div>
-                            <div class="proj-desc">Secondary service for missing data retrieval. Inter-service communication, fund accounting delivery.</div>
+                            <div class="proj-title" data-i18n="proj5.title">Microservices — Fond Data</div>
+                            <div class="proj-desc" data-i18n="proj5.desc">Secondary service for missing data retrieval. Inter-service communication, fund accounting delivery.</div>
                         </div>
                     </div>
                     <div class="proj-card">
                         <div class="proj-card-top"><div class="pdot"></div><div class="pdot"></div><div class="pdot"></div></div>
                         <div class="proj-card-body">
-                            <div class="proj-title">TFS Automation & Archiving</div>
-                            <div class="proj-desc">PowerShell sprint automation on TFS. Console apps for legacy data migration across systems.</div>
+                            <div class="proj-title" data-i18n="proj6.title">TFS Automation & Archiving</div>
+                            <div class="proj-desc" data-i18n="proj6.desc">PowerShell sprint automation on TFS. Console apps for legacy data migration across systems.</div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="tl-item fade-up">
-                <p class="tl-period">2025 — Present</p>
-                <h3 class="tl-role">Portfolio Projects</h3>
-                <p class="tl-company">Self-initiated — Public GitHub Repositories</p>
+                <p class="tl-period" data-i18n="tl.period2">2025 — Present</p>
+                <h3 class="tl-role" data-i18n="tl.role2">Portfolio Projects</h3>
+                <p class="tl-company" data-i18n="tl.company2">Self-initiated — Public GitHub Repositories</p>
                 <div class="tl-tech">
                     <span>.NET Core 8</span><span>Angular 17</span><span>SQL Server</span>
                     <span>Dataverse API</span><span>Azure AD / OAuth2</span><span>GitHub Actions</span>
@@ -314,15 +322,15 @@
                     <div class="proj-card" style="border-color: rgba(191,154,76,0.3);">
                         <div class="proj-card-top"><div class="pdot"></div><div class="pdot"></div><div class="pdot"></div></div>
                         <div class="proj-card-body">
-                            <div class="proj-title" style="color:var(--gold)">Dynamics CRM Sync Dashboard</div>
-                            <div class="proj-desc">Fullstack app syncing Dynamics 365 contacts into SQL Server via Dataverse OData API. OAuth2 client-credentials flow, background sync job, Angular 17 dashboard with live status, error log and manual trigger. CI/CD via GitHub Actions → Azure.</div>
+                            <div class="proj-title" style="color:var(--gold)" data-i18n="proj7.title">Dynamics CRM Sync Dashboard</div>
+                            <div class="proj-desc" data-i18n="proj7.desc">Fullstack app syncing Dynamics 365 contacts into SQL Server via Dataverse OData API. OAuth2 client-credentials flow, background sync job, Angular 17 dashboard with live status, error log and manual trigger. CI/CD via GitHub Actions → Azure.</div>
                         </div>
                     </div>
                     <div class="proj-card" style="border-color: rgba(46,196,182,0.3);">
                         <div class="proj-card-top"><div class="pdot"></div><div class="pdot"></div><div class="pdot"></div></div>
                         <div class="proj-card-body">
-                            <div class="proj-title" style="color:var(--teal)">Sanver Facility Service Website</div>
-                            <div class="proj-desc">Corporate website for a facility management company. Built with Astro for optimal performance — modular component architecture (Nav, Hero, Services, Booking, Footer), multi-page (AGB, Datenschutz, Impressum), deployed live at <a href="https://www.sanver-facilityservice.de" target="_blank" style="color:var(--teal)">sanver-facilityservice.de</a>.</div>
+                            <div class="proj-title" style="color:var(--teal)" data-i18n="proj8.title">Sanver Facility Service Website</div>
+                            <div class="proj-desc" data-i18n-html="proj8.desc.html">Corporate website for a facility management company. Built with Astro for optimal performance — modular component architecture (Nav, Hero, Services, Booking, Footer), multi-page (AGB, Datenschutz, Impressum), deployed live at <a href="https://www.sanver-facilityservice.de" target="_blank" style="color:var(--teal)">sanver-facilityservice.de</a>.</div>
                         </div>
                     </div>
                 </div>
@@ -334,19 +342,19 @@
 <!-- BOOKING -->
 <section id="booking">
     <div class="container">
-        <p class="section-label fade-up">Consultation</p>
-        <h2 class="section-title fade-up">Book a<br><span>Discovery Call</span></h2>
+        <p class="section-label fade-up" data-i18n="booking.label">Consultation</p>
+        <h2 class="section-title fade-up" data-i18n-html="booking.title.html">Book a<br><span>Discovery Call</span></h2>
 
         <div class="booking-grid">
             <div class="booking-info fade-up">
-                <h3>Let's talk about your project</h3>
-                <p>Whether you need a backend built from scratch, an existing system modernized, or senior .NET expertise added to your team — let's find out how I can help. No commitment, just a conversation.</p>
+                <h3 data-i18n="booking.h3">Let's talk about your project</h3>
+                <p data-i18n="booking.p">Whether you need a backend built from scratch, an existing system modernized, or senior .NET expertise added to your team — let's find out how I can help. No commitment, just a conversation.</p>
                 <div class="booking-feats">
-                    <div class="bfeat"><div class="bfeat-icon">✓</div><span>30-min video call via Google Meet or Teams</span></div>
-                    <div class="bfeat"><div class="bfeat-icon">✓</div><span>Technical requirements & feasibility discussion</span></div>
-                    <div class="bfeat"><div class="bfeat-icon">✓</div><span>Available in German, English, or Turkish</span></div>
-                    <div class="bfeat"><div class="bfeat-icon">✓</div><span>No sales pitch — honest engineering conversation</span></div>
-                    <div class="bfeat"><div class="bfeat-icon">✓</div><span>Project estimate follow-up within 48 hours</span></div>
+                    <div class="bfeat"><div class="bfeat-icon">✓</div><span data-i18n="booking.feat1">30-min video call via Google Meet or Teams</span></div>
+                    <div class="bfeat"><div class="bfeat-icon">✓</div><span data-i18n="booking.feat2">Technical requirements &amp; feasibility discussion</span></div>
+                    <div class="bfeat"><div class="bfeat-icon">✓</div><span data-i18n="booking.feat3">Available in German, English, or Turkish</span></div>
+                    <div class="bfeat"><div class="bfeat-icon">✓</div><span data-i18n="booking.feat4">No sales pitch — honest engineering conversation</span></div>
+                    <div class="bfeat"><div class="bfeat-icon">✓</div><span data-i18n="booking.feat5">Project estimate follow-up within 48 hours</span></div>
                 </div>
             </div>
 
@@ -354,11 +362,11 @@
                 <div class="cal-toggle">
                     <button class="cal-tab active" data-cal="15">
                         <span class="cal-tab-duration">15 min</span>
-                        <span class="cal-tab-label">Quick Intro</span>
+                        <span class="cal-tab-label" data-i18n="cal.tab15">Quick Intro</span>
                     </button>
                     <button class="cal-tab" data-cal="30">
                         <span class="cal-tab-duration">30 min</span>
-                        <span class="cal-tab-label">Project Deep-Dive</span>
+                        <span class="cal-tab-label" data-i18n="cal.tab30">Project Deep-Dive</span>
                     </button>
                 </div>
 
@@ -385,40 +393,40 @@
 <!-- CONTACT -->
 <section id="contact">
     <div class="container">
-        <p class="section-label fade-up">Get in Touch</p>
-        <h2 class="section-title fade-up">Let's work<br><span>together.</span></h2>
+        <p class="section-label fade-up" data-i18n="contact.label">Get in Touch</p>
+        <h2 class="section-title fade-up" data-i18n-html="contact.title.html">Let's work<br><span>together.</span></h2>
 
         <div class="contact-grid">
             <div class="contact-info fade-up">
-                <h3>Ready to start a project?</h3>
-                <p>Send a message with your requirements or use the booking calendar above. I respond to all inquiries within 24 hours.</p>
+                <h3 data-i18n="contact.h3">Ready to start a project?</h3>
+                <p data-i18n="contact.p">Send a message with your requirements or use the booking calendar above. I respond to all inquiries within 24 hours.</p>
                 <div class="cdetails">
                     <div class="cdet">
                         <div class="cdet-icon">@</div>
                         <div>
-                            <span class="cdet-lbl">Email</span>
+                            <span class="cdet-lbl" data-i18n="contact.email.lbl">Email</span>
                             <div class="cdet-val"><a href="mailto:yarbasyakup7@gmail.com">yarbasyakup7@gmail.com</a></div>
                         </div>
                     </div>
                     <div class="cdet">
                         <div class="cdet-icon">☏</div>
                         <div>
-                            <span class="cdet-lbl">Phone</span>
+                            <span class="cdet-lbl" data-i18n="contact.phone.lbl">Phone</span>
                             <div class="cdet-val"><a href="tel:+4917284466558">+49 172 8446558</a></div>
                         </div>
                     </div>
                     <div class="cdet">
                         <div class="cdet-icon">⌖</div>
                         <div>
-                            <span class="cdet-lbl">Location</span>
-                            <div class="cdet-val">Frankfurt am Main, Germany</div>
+                            <span class="cdet-lbl" data-i18n="contact.location.lbl">Location</span>
+                            <div class="cdet-val" data-i18n="contact.location.val">Frankfurt am Main, Germany</div>
                         </div>
                     </div>
                     <div class="cdet">
                         <div class="cdet-icon" style="color:var(--teal); border-color:rgba(46,196,182,0.3)">◉</div>
                         <div>
-                            <span class="cdet-lbl">Status</span>
-                            <div class="cdet-val" style="color:var(--teal)">Open to new projects</div>
+                            <span class="cdet-lbl" data-i18n="contact.status.lbl">Status</span>
+                            <div class="cdet-val" style="color:var(--teal)" data-i18n="contact.status.val">Open to new projects</div>
                         </div>
                     </div>
                 </div>
@@ -427,27 +435,27 @@
             <form class="form fade-up" id="contactForm">
                 <div class="form-row">
                     <div class="fg">
-                        <label class="flbl">Name</label>
-                        <input class="finp" type="text" placeholder="Your name" required>
+                        <label class="flbl" for="f-name" data-i18n="form.name.lbl">Name</label>
+                        <input id="f-name" class="finp" type="text" data-i18n-placeholder="form.name.ph" placeholder="Your name" required>
                     </div>
                     <div class="fg">
-                        <label class="flbl">Company</label>
-                        <input class="finp" type="text" placeholder="Your company">
+                        <label class="flbl" for="f-company" data-i18n="form.company.lbl">Company</label>
+                        <input id="f-company" class="finp" type="text" data-i18n-placeholder="form.company.ph" placeholder="Your company">
                     </div>
                 </div>
                 <div class="fg">
-                    <label class="flbl">Email</label>
-                    <input class="finp" type="email" placeholder="your@email.com" required>
+                    <label class="flbl" for="f-email" data-i18n="form.email.lbl">Email</label>
+                    <input id="f-email" class="finp" type="email" data-i18n-placeholder="form.email.ph" placeholder="your@email.com" required>
                 </div>
                 <div class="fg">
-                    <label class="flbl">Project Type</label>
-                    <input class="finp" type="text" placeholder="e.g. REST API, Angular app, system migration…">
+                    <label class="flbl" for="f-type" data-i18n="form.type.lbl">Project Type</label>
+                    <input id="f-type" class="finp" type="text" data-i18n-placeholder="form.type.ph" placeholder="e.g. REST API, Angular app, system migration…">
                 </div>
                 <div class="fg">
-                    <label class="flbl">Message</label>
-                    <textarea class="ftxt" placeholder="Describe your project, requirements, and timeline…" required></textarea>
+                    <label class="flbl" for="f-msg" data-i18n="form.msg.lbl">Message</label>
+                    <textarea id="f-msg" class="ftxt" data-i18n-placeholder="form.msg.ph" placeholder="Describe your project, requirements, and timeline…" required></textarea>
                 </div>
-                <button type="submit" class="fsub">Send Message →</button>
+                <button type="submit" class="fsub" data-i18n="form.submit">Send Message →</button>
             </form>
         </div>
     </div>
@@ -458,10 +466,10 @@
         <div class="footer-inner">
             <span class="fcopy">© 2026 Yakup Yarbas — Frankfurt am Main</span>
             <ul class="flinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#contact" data-i18n="contact.label">Contact</a></li>
             </ul>
         </div>
     </div>
