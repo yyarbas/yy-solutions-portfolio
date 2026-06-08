@@ -334,7 +334,7 @@ document.getElementById('contactForm').addEventListener('submit', e => {
     const msg = document.getElementById('f-msg').value;
     const sub = encodeURIComponent(`Project Inquiry from ${name}${company ? ' (' + company + ')' : ''}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nCompany: ${company||'—'}\nProject type: ${type||'—'}\n\nMessage:\n${msg}`);
-    window.location.href = `mailto:yarbasyakup7@gmail.com?subject=${sub}&body=${body}`;
+    window.location.href = `mailto:yakup@yy-solutions.com?subject=${sub}&body=${body}`;
     showToast('Opening email client…');
 });
 
